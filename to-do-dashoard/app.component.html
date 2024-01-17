@@ -1,0 +1,34 @@
+<mat-toolbar class="ff-serif">
+  <div class="row" style="width: 100%;">
+    <div class="col-9">
+      MyToDo
+    </div>
+    <div class="col-3 text-end">
+      <div class="btn-group customiseTheme"dropdown>
+        <button id="button-basic" dropdownToggle type="button" aria-controls="dropdown-basic">
+          <img style="height: 25px;" src="assets/collapseIcon.png" alt="">
+        </button>
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu themeDropDownContainer" style = "width:100px;" role="menu"
+          aria-labelledby="button-basic" style="background: #673ab7" >
+          <li role="menuitem" class = "imgMenu">
+            <img src="assets/Image_1.webp" alt="" class="themeImg" (click)="applyTheme('theme1')"><br>
+            <img src="assets/Image_2.jpg" alt="" class="themeImg" (click)="applyTheme('theme2')"><br>
+            <img src="assets/Image_3.jpg" alt="" class="themeImg" (click)="applyTheme('theme3')"><br>
+            <img src="assets/Image_4.jpg" alt="" class="themeImg" (click)="applyTheme('theme4')"><br>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+      <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div class="appContent" [ngClass]="getTheme()">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

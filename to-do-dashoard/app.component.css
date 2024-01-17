@@ -1,0 +1,74 @@
+mat-toolbar{
+    background: #673ab7;
+    color: #fff;
+    height: 50px;
+    font-weight: 400;
+    font-size: 27px;
+    padding-left: 2.5rem;
+}
+mat-sidenav-container{
+    height: calc(100vh - 50px);
+}
+mat-sidenav{
+background: #f3f3f3;
+box-shadow: 0px 0px 3px #bdbcbc;
+
+}
+
+.appContent {
+    height: calc(100vh - 56px);
+    border-radius: 5px;
+    margin: 3px; 
+    overflow: hidden;
+  }
+
+  .theme1 {
+    background-image: url('./../assets/Image_1.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.theme2 {
+    background-image: url('./../assets/Image_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.theme3 {
+    background-image: url('./../assets/Image_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.theme4 {
+    background-image: url('./../assets/Image_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.themeImg {
+    height: 25px;
+    border: 1px solid green;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+/* .button-basic {
+    outline: none;
+} */
+.btn-group  {
+    outline: none;
+}
+.themeDropDownContainer {
+    transform: translateY(6px) translateX(-70px) !important;
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 6.4rem;
+}
+
+.imgMenu {
+    min-height: 150px;
+}
+
+.imgMenu img{
+    height: 40px;
+    width: 95px;
+}

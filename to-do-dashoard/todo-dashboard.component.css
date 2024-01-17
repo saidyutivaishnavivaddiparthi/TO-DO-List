@@ -1,0 +1,111 @@
+.todoContainer {
+    height: 75%; 
+    border: 1px none #c5c5c5;
+    padding: 0px;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly; 
+    gap: 2rem;
+
+}
+.mainContent {
+    height: 100%;
+    width: 100%;
+    /* padding: 10px;*/
+} 
+
+.card-header {
+    color: #1a237e;
+    background: #dddddd;
+    font-weight: 500;
+    border: 0px;
+    font-family: 'Bree Serif', serif;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cardLabel {
+    color: #283593;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card-body {
+    padding: 5px;
+    background: #dddddd;
+    padding: 0px 5px 0px 15px;
+    border: none;
+}
+
+.card {
+    width: 400px;
+    border: none;
+}
+.card-footer {
+    background: #dddddd;
+    border: 0px;
+}
+
+.addACard {
+    margin-left: 5px;
+    color: #1a237e;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.plusIcon {
+    font-size: 20px;
+    line-height: 16px;
+}
+
+.topicContainer {
+    box-shadow: 1px 2px 4px 1px grey;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.topicContainer:first-child {
+    margin-top: 10px;
+}
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 6.4rem;
+}
+
+.imgMenu {
+    min-height: 150px;
+}
+
+.imgMenu img{
+    height: 40px;
+    width: 95px;
+}
+
+
+.topicContainer:last-child {
+    margin-bottom: 10px;
+}
+
+.topic-header {
+    font-size: 14px;
+}
+
+.topic-body {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+.dueDateContainer {
+    background: #c5cae9;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    border: 1px solid #6d718d;
+}
+

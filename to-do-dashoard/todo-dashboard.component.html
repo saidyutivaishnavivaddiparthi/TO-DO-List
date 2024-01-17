@@ -1,0 +1,133 @@
+<div class="mainContent">
+    <div class="row " cdkDropListGroup>
+      <div class="col-4 todoContainer example-container">
+        <div class="card ">
+          <div class="card-header">
+            TO DO
+  
+          </div>
+          <div class="card-body" cdkDropList [cdkDropListData]="toDoList" class="example-list"
+            (cdkDropListDropped)="drop($event)">
+  
+            <ul class="list-group list-group-flush">
+  
+              <li class="list-group-item cardLabel topicContainer example-box " *ngFor="let todo of toDoList"
+                (dblclick)="showEditToDo(todo)" cdkDrag>
+                <div class="topic-header ">
+  
+                  {{ todo.header }}
+  
+                </div>
+                <div class="topic-body example-list">
+                  <div>
+                    <div class="example-box" *ngFor="let item of toDoList"> </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-9">
+                      {{ todo.body }}
+                    </div>
+                    <div class="col-3 text-end">
+                       <span class="dueDateContainer">
+                        {{ todo.dueDate | date: 'dd/MMM/yyyy' }}
+                       </span>
+                    </div>
+                  </div>
+                </div>
+  
+              </li>
+  
+            </ul>
+          </div>
+  
+          <div class="card-footer">
+            <span class="addACard plusIcon">+</span>
+            <span class="addACard" (click)="showAddToDo()">Add a card</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 todoContainer example-container">
+        <div class="card">
+          <div class="card-header">
+            Progress
+          </div>
+          <div class="card-body" cdkDropList [cdkDropListData]="progressList" class="example-list"
+            (cdkDropListDropped)="drop($event)">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item cardLabel topicContainer example-box" *ngFor="let todo of progressList"
+                (dblclick)="showEditToDo(todo)" cdkDrag>
+                <div class="topic-header">
+                  {{ todo.header }}
+                </div>
+                <div class="topic-body example-list">
+                  <div>
+                    <div class="example-box" *ngFor="let item of progressList"> </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-9">
+                      {{ todo.body }}
+                    </div>
+                    <div class="col-3 text-end">
+                      <span class="dueDateContainer">
+                        {{ todo.dueDate | date: 'dd/MMM/yyyy' }}
+                       </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+  
+  
+  
+  
+            </ul>
+          </div>
+  
+  
+        </div>
+      </div>
+      <div class="col-4 todoContainer example-container">
+        <div class="card">
+          <div class="card-header">
+            <div class="row">
+              <div class="col-12 card-header" >
+                Done
+              </div>
+            </div>
+          </div>
+          <div class="card-body" cdkDropList [cdkDropListData]="doneList" class="example-list"
+            (cdkDropListDropped)="drop($event)">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item cardLabel topicContainer example-box" *ngFor="let todo of doneList"
+                (dblclick)="showEditToDo(todo)" cdkDrag>
+                <div class="topic-header">
+                  {{ todo.header }}
+                </div>
+                <div class="topic-body example-list">
+                  <div>
+                    <div class="example-box" *ngFor="let item of doneList"> </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-9">
+                      {{ todo.body }}
+                    </div>
+                    <div class="col-3 text-end">
+                      <span class="dueDateContainer">
+                        {{ todo.dueDate | date: 'dd/MMM/yyyy' }}
+                       </span>              
+                    </div>
+                  </div>
+                </div>
+              </li>
+  
+  
+  
+  
+            </ul>
+          </div>
+  
+  
+        </div>
+  
+      </div>
+    </div>
+  </div>
