@@ -1,0 +1,18 @@
+.dashboard {
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+    padding: 3rem 0;
+}
+.dashboard div{
+    width: 100%;
+}
+.menu-button {
+    display: flex;
+    width: 138px;
+    align-items: center;
+    font-size: 1rem;
+    justify-content: flex-start;
+    /* left: 3rem; */
+    margin: 0px;
+}
