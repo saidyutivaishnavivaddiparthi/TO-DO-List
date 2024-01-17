@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12 text-center" >
+        <div class=" differentTypeTimer ">
+            <div class="timerText ff-normal" (click)="onTimerStart(45, 0)">Work Session</div>
+            <div class="timerText ff-normal" (click)="onTimerStart(5, 0)">Short Break</div>
+            <div class="timerText ff-normal" (click)="onTimerStart(15, 0)">Long Break</div>
+        </div>
+        <div class = "timerContainerParent">
+            <div class = "timerContainer" >
+                <span class=" ff-normal ">{{ min }} : {{ sec }}</span>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <button class="btn btn-sm btn-success ff-serif" (click)="onStart()">Start</button>
+            <button class="btn btn-sm btn-warning ff-serif" style="margin-left: 10px;" (click)="onPause()">Pause</button>
+        </div>
+        
+    </div>
+</div>
