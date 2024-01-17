@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-9">
+                Add Task
+            </div>
+            <div class="col-3 text-danger crossButton" (click)="onCancel()">
+                X
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <table>
+            <tr>
+                <td><label for="">Header</label></td>
+                <td style="width: 100%;"><input type="text" class="text-control" style="width: 100%;" [(ngModel)]="header"></td>
+            </tr>
+            <tr class="mt-2">
+                <td><label for="">Message</label></td>
+                <td style="width: 100%;"><input type="text" class="text-control" style="width: 100%;" [(ngModel)]="body"></td>
+            </tr>
+            <tr class="mt-2">
+                <td><label for="">Due By</label></td>
+                <td style="width: 100%;">
+                    <div class="row">
+                        <div class="col-xs-12 col-12 col-md-4 form-group">
+                          <input type="text" container="body"
+                                 placeholder="Datepicker"
+                                 class="form-control"
+                                 [(ngModel)]="dueDate"
+                                 bsDatepicker>
+                        </div>
+                        
+                      </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="card-footer">
+        <div class="row">
+            <div class="col-12" style="text-align: right;">
+                <button class="btn btn-sm btn-success" (click)="onSave()">Save</button>
+        <button [disabled]="type==='add'" class="btn btn-sm btn-danger" style="margin-left: 5px;" (click)="onDelete()">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
