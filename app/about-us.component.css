@@ -1,0 +1,30 @@
+.mainContent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+/* .block {
+    display: block;
+} */
+.card {
+    width: 100px;
+}
+
+.studentImg {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    border: 1px solid #9c9cb8;
+    border-radius: 50px;
+    margin-top: 15px;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 13px;
+    font-weight: 400;
+}
